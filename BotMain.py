@@ -5,7 +5,7 @@ import pyt as p
 from discord.ext import commands;
 prefix = "."
 bot = commands.Bot(command_prefix = prefix)
-tkn = "NzI1NzAxMzg2MTIxMTE3Nzg2.XvSkFQ.8vQEWsD6nS5JIHmUvfOcN-UMPsI"
+tkn = "TOKEN" #PASTE TOKEN HERE
 #await ctx.message.channel.send(embed=embedVar)
 bot.remove_command('help')
 
@@ -52,23 +52,6 @@ async def clear(ctx, number=100):
         embedVar = discord.Embed(title="Error", description=f"{prefix}clear <number>", color=0x00ff00)
         embedVar.add_field(name="Please Try Again", value=f"like *{prefix}clear 1*", inline=False)
         await ctx.message.author.send(embed=embedVar)
-"""
-`              __       `
-` .-----.---.-|__.-----.`
-` |     |  _  |  |__ --|`
-` |__|__|___._|  |_____|`
-`            |___|      `"""
-"""
-@bot.command()
-async def ascii(ctx, what):
-    if (what == "najs"):
-        await ctx.message.channel.send("`              __       `\n` .-----.---.-|__.-----.`\n` |     |  _  |  |__ --|`"+
-            "\n` |__|__|___._|  |_____|`\n`            |___|      `");
-        pass
-    pass
-    
-    
-    """
 @bot.command()
 async def ascii(ctx, *what):
     for word in what:
